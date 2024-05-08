@@ -1,0 +1,29 @@
+apiVersion: k8s.keycloak.org/v2alpha1
+kind: Keycloak
+metadata:
+  name: pot-auth
+spec:
+  instances: 1
+  image: ghcr.io/datasance/keycloak:23.0.7
+  db:
+    vendor: mysql
+    usernameSecret:
+      name: mysql-secret
+      key: user
+    passwordSecret:
+      name: mysql-secret
+      key: password
+    host: mysql.pot-db.svc.cluster.local
+    database: pot_auth
+    port: 3306
+  http:
+    httpEnabled: true
+    httpPort: 8180
+    httpsPort: 8543
+    tlsSecret: datasance-auth
+  hostname:
+    hostname: 
+  ingress:
+    enabled: true
+
+    
