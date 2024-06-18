@@ -1,9 +1,9 @@
 apiVersion: k8s.keycloak.org/v2alpha1
 kind: KeycloakRealmImport
 metadata:
-  name: my-realm-kc
+  name: pot
 spec:
-  keycloakCRName: datasance
+  keycloakCRName: pot-auth
   realm:
     id: 0da748f6-1a8c-4e31-bf14-c252b803da83
     realm: datasance
@@ -716,7 +716,7 @@ spec:
         attributes:
           oidc.ciba.grant.enabled: "false"
           backchannel.logout.session.required: "true"
-          login_theme: keycloak
+          login_theme: datasance
           post.logout.redirect.uris: +
           display.on.consent.screen: "false"
           oauth2.device.authorization.grant.enabled: "false"

@@ -4,7 +4,8 @@ metadata:
   name: pot-auth
 spec:
   instances: 1
-  image: ghcr.io/datasance/keycloak:23.0.7
+  image: ghcr.io/datasance/keycloak:latest
+  startOptimized: false
   db:
     vendor: mysql
     usernameSecret:
