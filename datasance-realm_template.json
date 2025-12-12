@@ -782,7 +782,7 @@
       "clientId": "ecn-viewer",
       "name": "ecn-viewer",
       "description": "",
-      "rootUrl": "/",
+      "rootUrl": "",
       "adminUrl": "",
       "baseUrl": "/",
       "surrogateAuthRequired": false,
