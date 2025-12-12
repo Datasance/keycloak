@@ -815,6 +815,7 @@
         "frontchannel.logout.session.required": "true",
         "display.on.consent.screen": "false",
         "oauth2.device.authorization.grant.enabled": "false",
+        "pkce.code.challenge.method": "S256",
         "backchannel.logout.revoke.offline.tokens": "false"
       },
       "authenticationFlowBindingOverrides": {},
@@ -878,6 +879,7 @@
         "require.pushed.authorization.requests": "false",
         "tls.client.certificate.bound.access.tokens": "false",
         "display.on.consent.screen": "false",
+        "pkce.code.challenge.method": "S256",
         "token.response.type.bearer.lower-case": "false"
       },
       "authenticationFlowBindingOverrides": {},
